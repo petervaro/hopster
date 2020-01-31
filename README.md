@@ -56,7 +56,7 @@ $ HOPSTER_SERVER_SECRET_KEY='this-aint-no-secret' python server.py
 ## Tests
 
 ```bash
-$ pythom -m pytest -v
+$ python -m pytest -v
 ```
 
 ## Coverage
