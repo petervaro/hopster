@@ -15,6 +15,7 @@ class Task:
 
     #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
     def __init__(self, task):
+        Path(LOCKS_DIRECTORY).mkdir(exist_ok=True)
         self._task = task
 
     #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
@@ -26,7 +27,6 @@ class Task:
 
         # Indicate we started processing this task
         lock.touch()
-        print('>>>>> touched')
 
         # Create the job we need to run
         def target(*args, **kwargs):

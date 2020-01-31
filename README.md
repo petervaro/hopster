@@ -25,12 +25,12 @@
   $ python -m venv venv
   $ source ./venv/bin/activate
   ```
-- Downlaod and install the `python` dependencies:
+- Download and install the `python` dependencies:
   ```bash
   $ pip install --upgrade pip
   # To run the server the release-dependencies are enough to be installed
   $ pip install -r requirements.txt
-  # To run the client and/or tests the debug-dependencies need to installed
+  # To run the client and/or tests the debug-dependencies need to be installed
   # (which also includes the release dependencies)
   $ pip install -r requirements/debug.txt
   ```
