@@ -1,0 +1,9 @@
+.bucket
+.download
+.locks/
+.videos/
+.pytest_cache
+.coverage
+venv/
+*/__pycache__/
+*.pyc
